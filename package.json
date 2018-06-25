@@ -3,17 +3,17 @@
   "version": "3.0.4",
   "description": "React wrapper for firebaseui: Javascript library for customizable UI on top of Firebase SDK",
   "files": [
-    "FirebaseAuth.js",
-    "FirebaseAuth.js.map",
-    "StyledFirebaseAuth.js",
-    "StyledFirebaseAuth.js.map",
-    "index.js",
-    "index.js.map",
-    "LICENSE",
-    "README.md",
-    "package.json"
+    "dist/FirebaseAuth.js",
+    "dist/FirebaseAuth.js.map",
+    "dist/StyledFirebaseAuth.js",
+    "dist/StyledFirebaseAuth.js.map",
+    "dist/index.js",
+    "dist/index.js.map",
+    "dist/LICENSE",
+    "dist/README.md",
+    "dist/package.json"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack -p; babel src --out-dir dist -s; cp README.md LICENSE package.json dist; cd dist && npm install --only=production && cd -",
     "pub": "npm run build && npm publish dist"
@@ -21,12 +21,12 @@
   "author": "Google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/firebaseui-web-react.git"
+    "url": "https://github.com/mmiszy/firebaseui-web-react.git"
   },
   "license": "Apache-2.0",
   "peerDependencies": {
     "react": ">=15 <17",
-    "firebase": ">=5 <=5.0.1"
+    "firebase": ">=5 <=5.1"
   },
   "dependencies": {
     "firebaseui": "^3.0.0"
